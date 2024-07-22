@@ -5,3 +5,49 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+h1,h2 {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    margin: 0;
+    font-size: 5em;
+}
+#hero {
+    margin: 0;
+    width: 100%;
+    height: 800px;
+    background-color: gray;
+}
+#profile {
+    margin: 160px 120px 0 120px;
+    h3 {
+        font-size: 1.5em;
+        line-height: 1.8em;
+    }
+    p {
+        font-size: 1.2em;
+        line-height: 1.8em;
+    }
+}
+#skills {
+    margin: 160px 120px 0 120px;
+    .skill-images01 {
+        display: flex;
+        margin-top: 60px;
+        width: 100%;
+    }
+    img {
+        width: 30%;
+    }
+}
+#works {
+    margin: 160px 120px 0 120px;
+}
+footer {
+    margin: 0;
+    padding: 30px 0 30px;
+    background-color: gray;
+    justify-content: center;
+    text-align: center;
+    p {
+        margin: 0;
+    }
+}
