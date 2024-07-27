@@ -12,12 +12,12 @@ h1,h2 {
     margin: 0;
 }
 #hero {
-    margin: 120px 160px 120px 160px;
-    padding: 120px 0 120px;
+    margin: 120px 10% 120px 10%;
+    padding: 10% 0 10%;
     background-color: #333;
     border-radius: 32px;
     h1 {
-        font-size: 12em;
+        font-size: 10vw;
         background: linear-gradient(-45deg, #2AFADF,  #4C83FF); 
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -34,10 +34,10 @@ h1,h2 {
     }
 }
 h2 {
-    font-size: 7em;
+    font-size: 8vw;
 }
 #profile {
-    margin: 160px 120px 0 120px;
+    margin: 10% 7.5vw 0 7.5vw;
     border-top: px solid #333;
     h3 {
         font-family: 'Helvetica', 'Arial', sans-serif;
@@ -50,7 +50,7 @@ h2 {
     }
 }
 #skills {
-    margin: 160px 120px 0 120px;
+    margin: 10% 7.5vw 0 7.5vw;
     .skill-items {
         width: 70%;
         .skill-images {
@@ -65,9 +65,9 @@ h2 {
     }
 }
 #works {
-    margin: 160px 120px 0 120px;
+    margin: 10% 7.5vw 0 7.5vw;
     .work-item-first {
-        margin-top: 60px;
+        margin-top: 40px;
     }
     .work-item {
         margin-top: 160px;
@@ -103,7 +103,7 @@ h2 {
         left:0;
     }
     p {
-        font-size: 2em;
+        font-size: 1.5em;
         line-height: 1.8em;
     }
     .images {
@@ -127,5 +127,141 @@ footer {
         background: linear-gradient(-45deg, #2AFADF,  #4C83FF); 
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        font-family: "BIZ UDPGothic", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f7f7f7;
+        color: #333;
+    }
+    h1,h2 {
+        font-family: 'Helvetica', 'Arial', sans-serif;
+        margin: 0;
+    }
+    #hero {
+        margin: 7.5% 10% 7.5% 10%;
+        padding: 10% 0 10%;
+        background-color: #333;
+        border-radius: 16px;
+        h1 {
+            font-size: 10vw;
+            background: linear-gradient(-45deg, #2AFADF,  #4C83FF); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-text {
+            display: table;
+            width:100%;
+            height: 100%;
+            text-align: center;
+        }
+        .hero-text h1{
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    #profile {
+        margin: 10% 7.5vw 0 7.5vw;
+        border-top: px solid #333;
+        h3 {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            font-size: 1em;
+            line-height: 1.8em;
+        }
+        p {
+            font-size: 0.75em;
+            line-height: 1.8em;
+        }
+    }
+    #skills {
+        margin: 10% 7.5vw 0 7.5vw;
+        .skill-items {
+            width: 70%;
+            .skill-images {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+                width: 100%;
+            }
+            img {
+                width: 30%;
+            }
+        }
+    }
+    #works {
+        margin: 10% 7.5vw 0 7.5vw;
+        .work-item-first {
+            margin-top: 20px;
+        }
+        .work-item {
+            margin-top: 10%;
+        }
+        .works-text {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 100%;
+            margin-bottom: 1%;
+        }
+        h3, h4 {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            margin: 0;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+        h4 {
+            font-size: 1em;
+        }
+        .youtube-media {
+            width:100%;
+            height:0;
+            padding-bottom:56.25%;
+            position:relative;
+        }
+        .youtube-media iframe{
+            width:100%;
+            height:100%;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+        p {
+            font-size: 0.75em;
+            line-height: 1.8em;
+        }
+        .images {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+        .images img {
+            margin-left: 2%;
+            width: 7.5%;
+        }
+    }
+    footer {
+        margin: 7.5% 0 0 0;
+        padding: 30px 0 30px;
+        background-color: #333;
+        justify-content: center;
+        text-align: center;
+        p {
+            font-size: 0.5em;
+            margin: 0;
+            background: linear-gradient(-45deg, #2AFADF,  #4C83FF); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 }
