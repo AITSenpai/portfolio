@@ -35,6 +35,9 @@ h1,h2 {
 }
 h2 {
     font-size: 8vw;
+    background: linear-gradient(-45deg, #2AFADF,  #4C83FF); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #profile {
     margin: 10% 7.5vw 0 7.5vw;
@@ -52,6 +55,7 @@ h2 {
 #skills {
     margin: 10% 7.5vw 0 7.5vw;
     .skill-items {
+        margin: 0 auto;
         width: 70%;
         .skill-images {
             display: flex;
@@ -68,9 +72,17 @@ h2 {
     margin: 10% 7.5vw 0 7.5vw;
     .work-item-first {
         margin-top: 40px;
+        padding: 40px 40px 40px 40px;
+        border-radius: 32px;
+        box-shadow: 0px 0px 32px #888;
+        background-color: #333;
     }
     .work-item {
         margin-top: 160px;
+        padding: 40px 40px 40px 40px;
+        border-radius: 32px;
+        box-shadow: 0px 0px 32px #888;
+        background-color: #333;
     }
     .works-text {
         display: flex;
@@ -82,6 +94,9 @@ h2 {
     h3, h4 {
         font-family: 'Helvetica', 'Arial', sans-serif;
         margin: 0;
+        background: linear-gradient(-45deg, #2AFADF,  #4C83FF); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     h3 {
         font-size: 3em;
@@ -105,6 +120,7 @@ h2 {
     p {
         font-size: 1.5em;
         line-height: 1.8em;
+        color: #f7f7f7;
     }
     .images {
         display: flex;
@@ -146,12 +162,12 @@ footer {
         margin: 0;
     }
     #hero {
-        margin: 7.5% 10% 7.5% 10%;
+        margin: 7.5% 7.5% 7.5% 7.5%;
         padding: 10% 0 10%;
         background-color: #333;
         border-radius: 16px;
         h1 {
-            font-size: 10vw;
+            font-size: 12vw;
             background: linear-gradient(-45deg, #2AFADF,  #4C83FF); 
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -186,7 +202,7 @@ footer {
     #skills {
         margin: 10% 7.5vw 0 7.5vw;
         .skill-items {
-            width: 70%;
+            width: 100%;
             .skill-images {
                 display: flex;
                 justify-content: space-between;
@@ -202,9 +218,11 @@ footer {
         margin: 10% 7.5vw 0 7.5vw;
         .work-item-first {
             margin-top: 20px;
+            border-radius: 16px;
         }
         .work-item {
             margin-top: 10%;
+            border-radius: 16px;
         }
         .works-text {
             display: flex;
